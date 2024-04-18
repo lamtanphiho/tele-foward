@@ -37,4 +37,5 @@ bot.command('start', (ctx) => {
 //     const data = ctx.webAppData.data.json()
 //     console.log(data)
 // })
+console.log('https://t.me/ton_dapp_bot', 'ready')
 bot.launch()
