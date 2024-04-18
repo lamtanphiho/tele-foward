@@ -13,9 +13,10 @@ const content = '\n' +
     'TON DAPP Click on the "conditions" button, all the details are there\\!\n' +
     'You can invite friends via your personal referral link: https://t\\.me/ton_dapp_bot?start\\=' + moment().unix()
 const buttons = Markup.inlineKeyboard([
-    Markup.button.url('Join TON DAPP', 'https://t.me/tondappchannel'),
-    Markup.button.url('Discuss', 'https://t.me/tondappgroup'),
-    Markup.button.url('Invite a friend', 'https://t.me/share/url?url=https://t.me/ton_dapp_bot?start=' + moment().unix())
+   [ Markup.button.url('Join TON DAPP', 'https://t.me/tondappchannel'),
+    Markup.button.url('Discuss', 'https://t.me/tondappgroup')],
+   [ Markup.button.url('Buy TDAPP', 'https://tonraffles.app/jetton/fairlaunch/TDAPP'),
+    Markup.button.url('Invite a friend', 'https://t.me/share/url?url=https://t.me/ton_dapp_bot?start=' + moment().unix())]
 ])
 bot.command('start', (ctx) => {
     bot.telegram.sendPhoto(
