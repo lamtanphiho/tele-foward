@@ -6,10 +6,10 @@ const fs = require('fs')
 const bot = new Telegraf(token)
 
 const content = '\n' +
-    '🔥🔥🔥AIRDROP TONDAPP COIN 🔥🔥🔥\n' +
-    '$230 TDAPP \\- for each referred friend? \n' +
-    'These are the best conditions for a large\\-scale AIRDROP\\!\n' +
-    'Nothing could be simpler\\! Absolutely every participant will receive a DROP from TONDAPP\\.\n' +
+    '🔥🔥🔥AIRDROP TONDAPP COIN 🔥🔥🔥\n\n' +
+    '230 $TDAPP \\- for each referred friend? \n\n' +
+    'These are the best conditions for a large\\-scale AIRDROP\\!\n\n' +
+    'Nothing could be simpler\\! Absolutely every participant will receive a DROP from TONDAPP\\.\n\n' +
     'You can invite friends via your personal referral link: https://t\\.me/ton_dapp_bot?start\\=' + moment().unix()
 const buttons = Markup.inlineKeyboard([
    [ Markup.button.url('Join TON DAPP', 'https://t.me/tondappchannel'),
