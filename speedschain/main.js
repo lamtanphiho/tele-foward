@@ -48,8 +48,9 @@ bot.hears('hello', (ctx) => {
     ctx.reply('Hello ' + ctx.update.message.from.first_name + ' ' + ctx.update.message.from.last_name)
 })
 bot.hears('hi', (ctx) => {
-    // console.log(ctx.update)
+    console.log(ctx.update)
     ctx.reply(JSON.stringify(ctx.update))
 })
 console.log('https://t.me/speedschainbot', 'ready')
 bot.launch()
+
